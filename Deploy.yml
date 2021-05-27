@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: hello-python
-        image: hello-python:latest
+        image: $registry:$BUILD_NUMBER
         imagePullPolicy: Never
         ports:
         - containerPort: 5000
